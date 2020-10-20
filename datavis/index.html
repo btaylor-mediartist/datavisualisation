@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>ANTS</title>
+  <meta name="description" content="particles.js is a lightweight JavaScript library for creating particles.">
+  <meta name="author" content="Vincent Garreau" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" rel="stylesheet">
+  <link rel="stylesheet" media="screen" href="css/style.css">
+</head>
+<body class="text">
+
+    <script>var rvalue = 100;</script>
+    
+    
+       <div id="header">
+            <h2>How to get rid of </h2>
+            <h1>ANTS</h1>
+       </div>
+        <!-- Slideshow container -->
+    <div class="slideshow-container">
+
+      <!-- Full-width images with number and caption text -->
+      <div class="mySlides fade">
+          <div class="h3">What you can do</div>
+        <img src="static/ant-things.png" style="width:100%">
+        <div class="text">Filling up cracks with caulk or putty products can block the entrance ants may be using.
+          <br> <br> Making sure areas are clean, particularly if food has been involved is particularly important to stop attracting ants.</div>
+      </div>
+
+      <div class="mySlides fade">
+          <div class="h3">Household ant irritant and deterants</div>
+        <img src="static/ant-house-irritants.png" style="width:100%">
+        <div class="text">Any glass or detergent is recommended to be wiped along an ant pathway. This removes the pheromone communication trail which means any messages an ant may have left behind to signal another ant will be removed.
+          <br> <br>Additionally, items such as pepper (black, red, white etc), citrus fruits and coffee grounds are found to be somewhat effective at detering ants if placed around areas the ant might want to get in.
+          </div>
+      </div>
+
+      <div class="mySlides fade">
+          <div class="h3">Household items that can kill ants</div>
+        <img src="static/ant-household-killers.png" style="width:100%">
+        <div class="text">A mixture of 1 part white vinegar, 2 parts water can both repel and kill ants if sprayed around edges and cracks an ant might come in.
+          <br> <br>
+            A common method for if you know where the ant hole and it's enterances are is to pour boiling water into it, though is less effective if not all the points of entry are 'boiled'.
+            
+          </div>
+      </div>
+        
+        <div class="mySlides fade">
+          <div class="h3">Make an ant trap</div>
+        <img src="static/make-trap.png" style="width:100%">
+        <div class="text">Using products such as boric acid, borax and silicon dioxide in a mixture of water and sugar will successfully kill ants. Simply put it in a small container where the ants will find it and take care that it is not found by children or pets.
+          </div>
+      </div>
+        
+        <div class="mySlides fade">
+          <div class="h3">Essential Oils</div>
+        <img src="static/ant-oils.png" style="width:100%">
+        <div class="text">If you want to stay away from man made chemicals, you can look into natural repellants such as neem, peppermint and lemon eucalyptus oil. Simply adding 10-15 drops into 100mls of water and spraying areas that ants are around should be effective.
+            
+            <br> <br>
+        Stronger essential oils like cinnamon leaf, tea tree and oil of lemon eucalyptus (the gum of the tree) are able to kill ants.
+          </div>
+      </div>
+        
+        <div class="mySlides fade">
+          <div class="h3">Professional options</div>
+        <img src="static/ant-buy.png" style="width:100%">
+        <div class="text">There are also ant extermination services available for particularly bad infestations, not to mention a variety of commercial bug bombs, ant sprays and ant traps.
+          </div>
+      </div>
+    </div>
+    
+    <div id="overlay">
+    
+
+    <div class="button" style="text-align:center">
+        <!--
+        <button onclick="pJSValueChange()">200</button>
+        
+        <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script> 
+        <script>
+            function pJSValueChange() {
+                window.pJS_GUI = window.pJSDom[0].pJS;
+                pJS_GUI.particles.interactivity.modes.repulse.distance = 200;
+            }
+            
+            
+        </script>
+       
+        
+                   <!-- Next and previous buttons -->
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+     <!--
+        
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+        <span class="dot" onclick="currentSlide(5)"></span>
+        <span class="dot" onclick="currentSlide(6)"></span>
+ -->
+       
+    </div>
+    
+    <script>
+    var slideIndex = 1;
+    showSlides(slideIndex);
+
+    // Next/previous controls
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+
+    // Thumbnail image controls
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("dot");
+      if (n > slides.length) {slideIndex = 1}
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+      }
+      for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";
+      dots[slideIndex-1].className += " active";
+    }
+    </script>
+        
+    <script>
+        function on() {
+            document.getElementById("overlay").style.display = "block";}
+    </script>
+    
+    
+
+<!-- particles.js container -->
+<div id="particles-js"></div>
+
+<!-- scripts -->
+<script src="../particles.js"></script>
+<script src="js/app.js"></script>
+
+    
+    
+        <div id="antcode">
+        
+        <script>
+
+    
+    
+
+    
+  update = function() {
+    stats.begin();
+    stats.end();
+    if (window.pJSDom[0].pJS.particles && window.pJSDom[0].pJS.particles.array) {
+      count_particles.innerText = window.pJSDom[0].pJS.particles.array.length;
+    }
+    requestAnimationFrame(update);
+  };
+  requestAnimationFrame(update);
+    
+        function img1(){
+            document.getElementById("antcode").innerHTML = rvalue;
+            rvalue = 20;
+        }
+            
+            
+    
+</script>
+         
+        </div>
+        
+        
+        
+    </div>
+    
+
+    
+    
+</body>
+</html>
